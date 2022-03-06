@@ -4,17 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissor</title>
-  <style src="./style.css"></style>
+  <title>Rock Scissors Paper</title>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
   <div class="main-container">
-    <h1>Fight against a computer</h1>
-    
-    <div class="score-container">
-      <p class="player-score">0</p>
-      <p class="computer-score">0</p>
-    </div>  
+    <h1>Fight against AI</h1>
+    <p class="info">Humanity can defend itself fighting against computers with ROCK, SCISSORS or PAPER.</p>
+    <div class="game image-container">
+      <input id="id-rock" class="game-image" type="image" src="./rock.png"/>
+      <input id="id-scissors" class="game-image" type="image" src="./scissors.png"/>
+      <input id="id-paper" class="game-image" type="image" src="./paper.png"/>
+    </div>
+    <button class="fight-button">Fight!</button>
+    <p class="winner"></p>
+    <button class="restart-button"></button>
+    <div class="game score-container">
+      <div>
+        <p class="player-attr">Player HP</p>
+        <p class="player-attr">Computer HP</p>
+      </div>
+      <div>
+        <p class="full-hp player-score"></p>
+        <p class="full-hp computer-score"></p>
+      </div>
+    </div>
   </div>
 </body>
 <script src="./application.js"></script>
